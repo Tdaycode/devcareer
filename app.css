@@ -1,0 +1,660 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: avenir;
+    margin: 0;
+    padding: 1rem;
+    background-color: #E5E5E5;
+}
+
+
+/* header styles without libraries */
+
+header {
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.header-box {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-logo {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #9C69E2;
+    border-radius: 20px;
+}
+
+
+/* header logo styles */
+
+.h-logo {
+    display: inline-block;
+    width: 20px;
+    height: 35px;
+    background: #F063B8;
+    border-radius: 20px;
+}
+
+.header-box ul {
+    list-style: none;
+    padding-left: 0;
+    display: block;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+/* list styles for all link */
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    color: #4B5D68;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0 0.8rem;
+}
+
+
+/* button styles */
+
+div .btn {
+    width: 100%;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.005em;
+    color: #212353;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+div .btn:hover {
+    color: #FFF;
+    background-color: #212353;
+}
+
+
+/* section two styles */
+
+.container-2,
+.section-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}
+
+.headline h1 {
+    font-size: 3rem;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    color: #212353;
+    margin-bottom: 0.5rem;
+}
+
+.headline p {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    padding-top: 5%;
+    color: #4B5D68;
+    margin-top: 0.2rem;
+}
+
+.headline button {
+    width: 70%;
+    border: none;
+    border-radius: 50px;
+    padding: 1rem;
+    background-color: #9C69E2;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.headline button:hover {
+    color: #9C69E2;
+    background-color: white;
+}
+
+.section-2 {
+    grid-gap: 30px;
+    background: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+}
+
+
+/* whole details for section 2 styles */
+
+.details h1 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.3rem;
+    line-height: 3rem;
+    color: #212353;
+    margin-bottom: 0.3rem;
+}
+
+.details p {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 160%;
+    color: #4B5D68;
+}
+
+
+/* The styles for feature sections */
+
+.feature-text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.feature-text h2 {
+    color: #212353;
+    font-size: 2rem;
+    margin-bottom: 0.1rem;
+}
+
+.feature-text p {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 160%;
+    color: #4B5D68;
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px
+}
+
+.feature-container article {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 1rem;
+}
+
+.feature-container article img {
+    height: 100%;
+}
+
+.feature-container article:nth-of-type(1) {
+    background-image: url('bg1.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.feature-container article:nth-of-type(2) {
+    background-image: url('bg2.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.feature-container article:nth-of-type(3) {
+    background-image: url('bg3.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.feature-container article:nth-of-type(4) {
+    background-image: url('bg4.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.feature-container article h3 {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: #212353;
+}
+
+.feature-container article p {
+    color: #4B5D68;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.feature-container article a {
+    text-decoration: none;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    color: #212353;
+    letter-spacing: 0.05rem;
+}
+
+hr {
+    margin: 3rem 0;
+    width: 100vw;
+    opacity: 0.2;
+    height: 2px;
+    background-color: #9C69E2;
+}
+
+
+/* The stressfull footer styles */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: Avenir;
+}
+
+.footer-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer-head h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #212353;
+    margin-bottom: 0;
+}
+
+.footer-head p {
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+}
+
+.footer-head div:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-head button {
+    border-radius: 50px;
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 160%;
+    text-align: center;
+    width: 50%;
+    margin: 0 0.3rem;
+}
+
+.footer-head button:nth-of-type(1) {
+    background: #F063B8;
+    color: white;
+    font-size: 18px;
+}
+
+.footer-head button:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    font-size: 16px;
+    width: 60%;
+}
+
+.footer-head button:nth-of-type(2) span:nth-of-type(1) {
+    width: 20px;
+    height: 0px;
+    border: 1px solid #9C69E2;
+}
+
+.footer-head button:nth-of-type(2) span:nth-of-type(2) {
+    width: 0px;
+    height: 6px;
+    border: 1px solid #9C69E2;
+    transform: rotate(90deg);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo h4 {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 160%;
+    color: #212353;
+}
+
+.footer-content p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 180%;
+    letter-spacing: 0.01em;
+    color: #212353;
+    margin: 0;
+}
+
+.footer-content span:nth-of-type(1) {
+    width: 20px;
+    height: 20px;
+    background: #9C69E2;
+    border-radius: 20px;
+    margin-right: 0.3rem;
+}
+
+.footer-content span:nth-of-type(2) {
+    width: 20px;
+    height: 35px;
+    background: #F063B8;
+    border-radius: 20px;
+    margin-right: 0.3rem;
+}
+
+.footer-content ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.footer-content ul li {
+    display: block;
+    margin-left: 0;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 250%;
+    color: #212353;
+}
+
+.footer-content div h5 {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 160%;
+    color: #212353;
+    margin: 0;
+}
+
+.footer-content div h5 a {
+    text-decoration: none;
+    color: #212353;
+}
+
+.footer-content div:nth-of-type(5) {
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content div:nth-of-type(5) p {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 180%;
+    letter-spacing: 0.01em;
+    color: #212353;
+}
+
+
+/* Media Queries for all screen size and good responsivesness */
+
+
+/* For Tablets */
+
+@media screen and (min-width: 768px) {
+    .header-box {
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .container-2,
+    .section-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+        align-items: center;
+    }
+    .feature-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-head {
+        flex-direction: row;
+    }
+    .footer-head div:nth-of-type(2) {
+        width: 50%;
+    }
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }
+    .footer-content div:nth-of-type(2),
+    .footer-content div:nth-of-type(4) {
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+
+/* For Laptops and higher */
+
+@media screen and (min-width: 992px) {
+    body {
+        padding: 2rem;
+    }
+    .header-box {
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .container-2,
+    .section-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+        align-items: center;
+    }
+    .headline h1 {
+        font-size: 6rem;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: bold;
+        color: #212353;
+        margin-bottom: 0.5rem;
+    }
+    .headline button {
+        width: 50%;
+    }
+    .feature-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-head {
+        flex-direction: row;
+    }
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 30px;
+    }
+    .footer-head div:nth-of-type(2) {
+        width: 40%;
+    }
+    .footer-content span:nth-of-type(1),
+    .footer-content span:nth-of-type(2) {
+        margin-right: 0.3rem;
+    }
+    .footer-content div:nth-of-type(2),
+    .footer-content div:nth-of-type(3),
+    .footer-content div:nth-of-type(4) {
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+
+/* Testimonial section using bootstrap */
+
+#testimonials {
+    width: 95%;
+    height: 709px;
+    background: #9C69E2;
+    border-radius: 50px;
+    margin-left: 3%;
+}
+
+#testimonials h2 {
+    width: 405px;
+    height: 52px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 7%;
+}
+
+#t-h2 {
+    padding-top: 10%;
+    padding-left: 25%;
+}
+
+.testimonial-text {
+    width: 170px;
+    height: 29px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 160%;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #212353;
+}
+
+.testimonial-link {
+    width: 101px;
+    height: 22px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #9C69E2;
+    text-decoration: none;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.feng {
+    width: 385px;
+    height: 130px;
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    color: #4B5D68;
+}
+
+.container-fluid {
+    margin-top: 8%;
+    width: 645px;
+    height: 330px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 0px rgba(156, 105, 226, 0.3);
+    border-radius: 20px;
+}
+
+#press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+#timer {
+    width: 10px;
+    height: 10px;
+    background: #F063B8;
+}
+
+.time {
+    display: block;
+    float: left;
+}
