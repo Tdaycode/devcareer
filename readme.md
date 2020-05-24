@@ -1,3 +1,3 @@
 link to the desgin
 
-tdaycode.github.io/devcareer/index.html
+https://tdaycode.github.io/devcareer/index.html
